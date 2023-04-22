@@ -1,0 +1,318 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif; }
+
+.header__img-container {
+  width: 100%;
+  height: 90vh;
+  position: relative; }
+
+.header__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+  /* THIS creates the animation! */
+  transition: transform 1s; }
+
+.slider__btn {
+  font-size: 3rem;
+  background-color: rgba(211, 211, 211, 0.5);
+  position: absolute;
+  color: #fff;
+  border-color: #fff;
+  top: 50%;
+  padding: 0.5rem 1rem;
+  display: inline-block; }
+  @media only screen and (max-width: 56.25em) {
+    .slider__btn {
+      top: 40%;
+      font-size: 2rem; } }
+  .slider__btn--left {
+    left: 1%; }
+  .slider__btn--right {
+    right: 1%; }
+
+.footer {
+  background-color: #35383c;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  line-height: 1.5; }
+  .footer__box {
+    margin: 0 auto;
+    width: 80rem;
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 75em) {
+      .footer__box {
+        width: 100%; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__box {
+        display: grid;
+        grid-template-columns: 1fr; } }
+  .footer__address {
+    margin-right: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__address {
+        margin-bottom: 2rem; } }
+  .footer__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.2rem; }
+  .footer__our-suites {
+    margin-right: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__our-suites {
+        margin-bottom: 2rem; } }
+  .footer__list {
+    list-style: none; }
+  .footer__link, .footer__link:link, .footer__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .footer__link:hover {
+    text-decoration: underline; }
+
+.suites {
+  margin: 5rem 0 0; }
+  .suites__container {
+    padding: 5rem;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    @media only screen and (max-width: 56.25em) {
+      .suites__container {
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr; } }
+    @media only screen and (max-width: 37.5em) {
+      .suites__container {
+        padding: 2rem;
+        grid-template-columns: 1fr; } }
+  .suites__title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 300; }
+  .suites__img-box {
+    padding: 1rem 2rem; }
+  .suites__img {
+    width: 100%; }
+  .suites__description {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: center; }
+
+.hidden {
+  display: none; }
+
+.booking__form {
+  height: 5rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7); }
+  @media only screen and (max-width: 68.75em) {
+    .booking__form {
+      height: 7rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .booking__form {
+      height: 9rem; } }
+
+.booking__form-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 68.75em) {
+    .booking__form-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr; } }
+  @media only screen and (max-width: 37.5em) {
+    .booking__form-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr; } }
+
+.booking__form-group:not(.booking__form-group:last-child) {
+  margin-right: 1rem; }
+
+.booking__input {
+  background-color: #fff;
+  color: #fff;
+  padding: 0.5rem;
+  border: none; }
+
+.booking__btn, .booking__btn:link, .booking__btn:visited {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  border: none; }
+
+.booking__btn:hover {
+  background-color: #47a4d6; }
+
+.nav {
+  height: 4rem;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .nav {
+      font-size: 0.7rem; } }
+  .nav__logo {
+    height: 3rem; }
+  .nav__list {
+    display: flex;
+    list-style: none; }
+    @media only screen and (max-width: 68.75em) {
+      .nav__list {
+        display: none; } }
+  .nav__item:not(:last-child) {
+    margin-right: 0.7rem; }
+  .nav__link, .nav__link:link, .nav__link:visited {
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    transition: all 0.2s; }
+  .nav__link:hover {
+    color: #000;
+    border-bottom: 0.2rem solid #000; }
+  .nav__link:active {
+    border: 0.1rem solid #000; }
+  .nav__link--active {
+    border: 0.1rem solid #000;
+    border-radius: 0.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__book {
+      display: none; } }
+  .nav__book--btn, .nav__book--btn:link, .nav__book--btn:visited {
+    padding: 0.7rem;
+    background-color: #000;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 0.2s; }
+    .nav__book--btn:not(:last-child), .nav__book--btn:link:not(:last-child), .nav__book--btn:visited:not(:last-child) {
+      margin-right: 0.3rem; }
+  .nav__book--btn:hover {
+    background-color: #47a4d6; }
+  .nav__social--icon, .nav__social--icon:link, .nav__social--icon:visited {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.5s;
+    border-radius: 1rem; }
+    .nav__social--icon:not(:last-child), .nav__social--icon:link:not(:last-child), .nav__social--icon:visited:not(:last-child) {
+      margin-right: 0.5rem; }
+  .nav__social--icon:hover {
+    color: #fff; }
+  .nav__social--facebook:hover {
+    background-color: #47a4d6; }
+  .nav__social--twitter:hover {
+    background-color: #27a3e0; }
+  .nav__social--instagram:hover {
+    background-color: #e36f2e; }
+  .nav__social--mail:hover {
+    background-color: #866e24; }
+  .nav__toggle {
+    display: none;
+    font-size: 2rem; }
+    @media only screen and (max-width: 68.75em) {
+      .nav__toggle {
+        display: block; } }
+
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40%;
+  background-color: #fff; }
+  .nav-mobile__close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.5rem; }
+  .nav-mobile__list {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    margin-top: 6rem;
+    margin-left: 1.5rem;
+    font-size: 1rem; }
+  .nav-mobile__item:not(:last-child) {
+    margin-bottom: 1rem; }
+  .nav-mobile__link, .nav-mobile__link:link, .nav-mobile__link:visited {
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.2s; }
+  .nav-mobile__link:hover {
+    color: #000;
+    border-bottom: 0.1rem solid #000; }
+  .nav-mobile__link:active {
+    border: 0.1rem solid #000; }
+  .nav-mobile__link--active {
+    border: 0.1rem solid #000;
+    border-radius: 0.5rem; }
+  .nav-mobile__book--btn, .nav-mobile__book--btn:link, .nav-mobile__book--btn:visited {
+    padding: 0.7rem 0.5rem;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s;
+    display: none; }
+    .nav-mobile__book--btn:not(:last-child), .nav-mobile__book--btn:link:not(:last-child), .nav-mobile__book--btn:visited:not(:last-child) {
+      margin-bottom: 0.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .nav-mobile__book--btn, .nav-mobile__book--btn:link, .nav-mobile__book--btn:visited {
+        display: inline-block; } }
+  .nav-mobile__book--btn:hover {
+    background-color: #47a4d6; }
+
+.overlay-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }

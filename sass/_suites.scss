@@ -1,0 +1,48 @@
+.suites {
+  margin: 5rem 0 0;
+
+  &__container {
+    padding: 5rem;
+    max-width: 120rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond(phone) {
+      padding: 2rem;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 300;
+  }
+
+  &__img-box {
+    padding: 1rem 2rem;
+  }
+
+  &__img {
+    width: 100%;
+
+    &:hover {
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1rem;
+    text-align: center;
+  }
+}

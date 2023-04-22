@@ -1,0 +1,77 @@
+.footer {
+  background-color: #35383c;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  line-height: 1.5;
+
+  &__box {
+    margin: 0 auto;
+    width: 80rem;
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__address {
+    margin-right: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &__text {
+  }
+
+  &__our-suites {
+    margin-right: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__eat {
+  }
+}
