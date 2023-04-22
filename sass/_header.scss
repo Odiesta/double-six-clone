@@ -1,10 +1,15 @@
 .header {
   position: relative;
+
   &__img-container {
     width: 100%;
     height: 90vh;
     position: relative;
     overflow: hidden;
+
+    @include respond(phone-sm) {
+      height: 50vh;
+    }
   }
 
   &__img {
@@ -20,6 +25,10 @@
   top: 0;
   width: 100%;
   height: 90vh;
+
+  @include respond(phone-sm) {
+    height: 50vh;
+  }
 
   /* THIS creates the animation! */
   transition: transform 1s;
@@ -39,6 +48,10 @@
     @include respond(tab-port) {
       top: 40%;
       font-size: 2rem;
+    }
+
+    @include respond(phone-sm) {
+      font-size: 1rem;
     }
 
     &--left {

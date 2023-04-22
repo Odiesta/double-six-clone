@@ -19,6 +19,9 @@ body {
     height: 90vh;
     position: relative;
     overflow: hidden; }
+    @media only screen and (max-width: 28.125em) {
+      .header__img-container {
+        height: 50vh; } }
   .header__img {
     width: 100%;
     height: 100%;
@@ -32,6 +35,9 @@ body {
   height: 90vh;
   /* THIS creates the animation! */
   transition: transform 1s; }
+  @media only screen and (max-width: 28.125em) {
+    .slide {
+      height: 50vh; } }
 
 .slider__btn {
   font-size: 3rem;
@@ -46,6 +52,9 @@ body {
     .slider__btn {
       top: 40%;
       font-size: 2rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .slider__btn {
+      font-size: 1rem; } }
   .slider__btn--left {
     left: 1%; }
   .slider__btn--right {
