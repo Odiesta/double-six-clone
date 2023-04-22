@@ -164,6 +164,10 @@
     margin-top: 6rem;
     margin-left: 1.5rem;
     font-size: 1rem;
+
+    @include respond(phone) {
+      font-size: 0.7rem;
+    }
   }
 
   &__item {
