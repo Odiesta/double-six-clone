@@ -12,16 +12,18 @@ body {
   font-size: 62.5%;
   font-family: "Lato", sans-serif; }
 
-.header__img-container {
-  width: 100%;
-  height: 90vh;
+.header {
   position: relative; }
-
-.header__img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  overflow: hidden; }
+  .header__img-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden; }
+  .header__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden; }
 
 .slide {
   position: absolute;
@@ -129,6 +131,9 @@ body {
 .hidden {
   display: none; }
 
+.normal-flow {
+  position: static; }
+
 .booking__form {
   height: 5rem;
   width: 100%;
@@ -143,6 +148,11 @@ body {
   @media only screen and (max-width: 37.5em) {
     .booking__form {
       height: 9rem; } }
+  @media only screen and (max-width: 28.125em) {
+    .booking__form {
+      position: static;
+      background-color: rgba(164, 164, 164, 0.4);
+      height: auto; } }
 
 .booking__form-container {
   margin: 0 auto;
@@ -160,9 +170,18 @@ body {
     .booking__form-container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr; } }
+  @media only screen and (max-width: 28.125em) {
+    .booking__form-container {
+      grid-template-columns: 1fr;
+      width: 50%; } }
 
 .booking__form-group:not(.booking__form-group:last-child) {
   margin-right: 1rem; }
+
+@media only screen and (max-width: 28.125em) {
+  .booking__form-group {
+    margin-right: 0;
+    margin-top: 1rem; } }
 
 .booking__input {
   background-color: #fff;

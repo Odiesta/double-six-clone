@@ -16,6 +16,12 @@
     @include respond(phone) {
       height: 9rem;
     }
+
+    @include respond(phone-sm) {
+      position: static;
+      background-color: rgba(#a4a4a4, 0.4);
+      height: auto;
+    }
   }
 
   &__form-container {
@@ -36,11 +42,21 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
     }
+
+    @include respond(phone-sm) {
+      grid-template-columns: 1fr;
+      width: 50%;
+    }
   }
 
   &__form-group {
     &:not(&:last-child) {
       margin-right: 1rem;
+    }
+
+    @include respond(phone-sm) {
+      margin-right: 0;
+      margin-top: 1rem;
     }
   }
 
